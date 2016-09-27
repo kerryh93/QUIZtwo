@@ -16,11 +16,14 @@ public class Main {
 		
 		System.out.print("How much is your first year tution?");
 		TutionCost = input.nextDouble();
-		
-		TotalTution = TutionCost;
+		TotalTution=TutionCost;
 		for ( int i= 0; i< 3; i++)
 		{
+			
 			System.out.println("What is the percent increase of your tution?");
+			PerInc =input.nextDouble();
+			PerInc= (PerInc/100);
+			TotalTution += (TutionCost*PerInc) + TutionCost ;
 		}
 		//test
 		
